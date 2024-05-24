@@ -1,0 +1,44 @@
+.desCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  opacity: 0.6;
+  margin-bottom: -40px;
+  background-color: rgb(255, 79, 79);
+  color: white;
+  text-align: center;
+  position: relative; 
+  z-index: 2; 
+}
+
+.description{
+  opacity: 1;
+  color: white;
+}
+
+.imageList {
+  display: flex;
+  flex-wrap: wrap;
+  columns: 200px 4;
+  column-gap: 30px;
+}
+
+.imageItem {
+  columns: 250px 4;
+  align-items: center;
+}
+
+.imageListImg {
+
+  margin-bottom: 20px;
+  filter: blur(2px);
+  transition: filter 0.3s;
+  z-index: 1; 
+}
+
+.imageListImg:hover,
+.imageListImg:active {
+  filter: blur(0);
+}
